@@ -22,7 +22,7 @@ const Europe = () => {
     {
       id: 2,
       name: 'France',
-      image: 'https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: 'https://www.planetware.com/wpimages/2020/02/france-in-pictures-beautiful-places-to-photograph-eiffel-tower.jpg',
       description: 'Romantic cities, world-class wine, and breathtaking landscapes',
       price: 'From $3,199',
       duration: '8-12 days',

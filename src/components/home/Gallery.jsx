@@ -7,7 +7,7 @@ const Gallery = () => {
       title: "Vietnam",
       image: "https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
       description: "Sensing the Timeless Charm of Vietnam",
-      link: "#",
+      link: "/destinations/vietnam",
       colClass: "col-6 col-md-8 col-lg-6"
     },
     {
@@ -15,7 +15,7 @@ const Gallery = () => {
       title: "Laos",
       image: "https://media.istockphoto.com/id/810049010/photo/wat-xieng-thong-temple-luang-pra-bang-laos.jpg?s=612x612&w=0&k=20&c=ZIJOnoCA1ZdCFkakqiqfPd3TnEfNG9qoylJFpcdS0wY=",
       description: "Savoring the Simply Beautiful Tranquility",
-      link: "#",
+      link: "/destinations/laos",
       colClass: "col-6 col-md-4 col-lg-3"
     },
     {
@@ -23,7 +23,7 @@ const Gallery = () => {
       title: "Thailand",
       image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1139&q=80",
       description: "Blossoming Soul Amidst Nature",
-      link: "#",
+      link: "/destinations/thailand",
       colClass: "col-6 col-md-6 col-lg-3"
     },
     {
@@ -31,7 +31,7 @@ const Gallery = () => {
       title: "Myanmar",
       image: "https://media.istockphoto.com/id/626515242/photo/sunrise-landscape-view-with-silhouettes-of-old-temples-bagan.jpg?s=612x612&w=0&k=20&c=ng3BpRW9hSXaEhUM9PJuF7OzxmBwIjvqYoNW-_Gty8g=",
       description: "Awakening the Rhythms of Inner Bliss",
-      link: "#",
+      link: "/destinations/myanmar",
       colClass: "col-6 col-md-6 col-lg-3"
     },
     {
@@ -39,7 +39,7 @@ const Gallery = () => {
       title: "Multi-Country Tours",
       image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80",
       description: "Discover two or three destinations in Southeast Asia in one journey",
-      link: "#",
+      link: "/destinations/multi-country-tours",
       colClass: "col-6 col-md-8 col-lg-6"
     },
     {
@@ -47,7 +47,7 @@ const Gallery = () => {
       title: "Cambodia",
       image: "https://t3.ftcdn.net/jpg/01/32/85/56/360_F_132855615_eWgknDrRIFXvMNfjZBa2e39xkewJUmvz.jpg",
       description: "Cherishing the Heartfelt Hospitality of Khmer People",
-      link: "#",
+      link: "/destinations/cambodia",
       colClass: "col-6 col-md-4 col-lg-3"
     },
     {
@@ -55,7 +55,7 @@ const Gallery = () => {
       title: "Indonesia",
       image: "https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1172&q=80",
       description: "Indonesia is the world's largest archipelago",
-      link: "#",
+      link: "/destinations/indonesia",
       colClass: "col-6 col-md-4 col-lg-3"
     },
     {
@@ -63,7 +63,7 @@ const Gallery = () => {
       title: "Malaysia",
       image: "https://images.unsplash.com/photo-1596422846543-75c6fc197f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=1064&q=80",
       description: "Malaysia is known for its diversity in landscapes and ethnic culture",
-      link: "#",
+      link: "/destinations/malaysia",
       colClass: "col-6 col-md-4 col-lg-3"
     },
     {
@@ -71,7 +71,7 @@ const Gallery = () => {
       title: "Philippines",
       image: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1206&q=80",
       description: "Famous for tropical climate and stunning islands",
-      link: "https://luxtraveldmc.com/destinations/philippines",
+      link: "/destinations/philippines",
       colClass: "col-6 col-md-4 col-lg-3"
     },
     {
@@ -79,7 +79,7 @@ const Gallery = () => {
       title: "Singapore",
       image: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1052&q=80",
       description: "Smallest country in Southeast Asia, but dynamic and modern",
-      link: "https://luxtraveldmc.com/destinations/singapore",
+      link: "/destinations/singapore",
       colClass: "col-6 col-md-4 col-lg-3"
     }
   ];

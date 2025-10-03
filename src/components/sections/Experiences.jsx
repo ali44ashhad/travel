@@ -1,46 +1,58 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // agar react-router use kar rahe ho
 import Button from '../common/Button';
 
 const Experiences = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Luxury Beach Retreat',
-      description: 'Private villas with ocean views, personalized service, and exclusive beach access',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      title: 'Beach Holidays',
+      description:
+        'Private villas with ocean views, personalized service, and exclusive beach access',
+      image:
+        'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&...',
       icon: 'umbrella-beach',
-      features: ['Private Pool', 'Spa Services', 'Gourmet Dining']
+      features: ['Private Pool', 'Spa Services', 'Gourmet Dining'],
+      link: '/beach-holidays'
     },
     {
       id: 2,
       title: 'Mountain Adventure',
-      description: 'Thrilling hikes, wildlife encounters, and breathtaking mountain landscapes',
-      image: 'https://images.stockcake.com/public/5/5/7/557ca58d-ac58-447d-9085-ee80eb07dbd0_large/mountain-adventure-awaits-stockcake.jpg',
+      description:
+        'Thrilling hikes, wildlife encounters, and breathtaking mountain landscapes',
+      image:
+        'https://images.stockcake.com/public/5/5/7/557ca58d-ac58-447d-9085-ee80eb07dbd0_large/mountain-adventure-awaits-stockcake.jpg',
       icon: 'mountain',
-      features: ['Expert Guides', 'Equipment Provided', 'Small Groups']
+      features: ['Expert Guides', 'Equipment Provided', 'Small Groups'],
+      link: '/adventure'
     },
     {
       id: 3,
-      title: 'Cultural Immersion',
-      description: 'Authentic local experiences, traditional ceremonies, and cultural workshops',
-      image: 'https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      title: 'Cultural Tours',
+      description:
+        'Authentic local experiences, traditional ceremonies, and cultural workshops',
+      image:
+        'https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&...',
       icon: 'landmark',
-      features: ['Local Guides', 'Hands-on Activities', 'Cultural Shows']
+      features: ['Local Guides', 'Hands-on Activities', 'Cultural Shows'],
+      link: '/cultural-tours'
     },
     {
       id: 4,
-      title: 'Wildlife Safari',
-      description: 'Close encounters with exotic wildlife in their natural habitats',
-      image: 'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2068&q=80',
+      title: 'Luxury Travel',
+      description:
+        'Close encounters with exotic wildlife in their natural habitats',
+      image:
+        'https://images.unsplash.com/photo-1516426122078-c23e76319801?ixlib=rb-4.0.3&...',
       icon: 'binoculars',
-      features: ['Expert Trackers', 'Luxury Lodges', 'Photography Focus']
+      features: ['Expert Trackers', 'Luxury Lodges', 'Photography Focus'],
+      link: '/luxury-travel'
     }
   ];
 
   return (
     <section className="py-20 bg-[#f7fafc]">
       <div className="container mx-auto px-4">
-
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1a365d] mb-4">
@@ -89,7 +101,10 @@ const Experiences = () => {
                   ))}
                 </ul>
 
-                <Button variant="primary">Discover More</Button>
+                {/* Button with Link */}
+                <Link to={exp.link}>
+                  <Button variant="primary">Discover More</Button>
+                </Link>
               </div>
             </div>
           ))}
@@ -113,7 +128,6 @@ const Experiences = () => {
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

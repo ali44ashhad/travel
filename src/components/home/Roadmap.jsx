@@ -279,14 +279,14 @@ const Roadmap = () => {
                     </motion.div>
 
                     <motion.div {...fadeInUp(0. + index * 0.1)}>
-                     <Button 
+                     {/* <Button 
   variant="primary" 
-  size="lg" 
+  size="lg"  
   className="group flex items-center"
 >
   <span>Learn More</span>
   <RiArrowRightSLine className="ml-2 text-xl group-hover:translate-x-1 transition-transform duration-300" />
-</Button>
+</Button> */}
 
                     </motion.div>
                   </div>

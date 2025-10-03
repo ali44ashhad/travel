@@ -1,5 +1,3 @@
-
-
 // import React from 'react';
 
 // const Button = ({ 
@@ -15,16 +13,16 @@
 //   const baseClasses =
 //     'font-sans font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-4';
 
-//   // 🎨 Updated theme colors
+//   // 🎨 Refined but similar theme
 //   const variants = {
 //     primary:
-//       'bg-purple-600 text-white hover:bg-purple-700 focus:ring-purple-300',
+//       'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300',
 //     secondary:
-//       'bg-emerald-600 text-white hover:bg-emerald-700 focus:ring-emerald-300',
+//       'bg-amber-500 text-white hover:bg-amber-600 focus:ring-amber-300',
 //     outline:
-//       'border-2 border-purple-600 text-purple-600 hover:bg-purple-600 hover:text-white focus:ring-purple-300',
+//       'border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white focus:ring-blue-300',
 //     ghost:
-//       'text-purple-600 hover:bg-purple-50 focus:ring-purple-200',
+//       'text-blue-600 hover:bg-blue-50 focus:ring-blue-200',
 //   };
 
 //   const sizes = {
@@ -59,6 +57,7 @@
 // export default Button;
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Button = ({ 
   children, 
@@ -68,31 +67,27 @@ const Button = ({
   disabled = false,
   type = 'button',
   className = '',
+  href,
   ...props 
 }) => {
-  const baseClasses =
-    'font-sans font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-4';
-
-  // 🎨 Refined but similar theme
+  const baseClasses = 'font-sans font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-4 inline-flex items-center justify-center';
+  
   const variants = {
-    primary:
-      'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300',
-    secondary:
-      'bg-amber-500 text-white hover:bg-amber-600 focus:ring-amber-300',
-    outline:
-      'border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white focus:ring-blue-300',
-    ghost:
-      'text-blue-600 hover:bg-blue-50 focus:ring-blue-200',
+    primary: 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-300',
+    secondary: 'bg-amber-500 text-white hover:bg-amber-600 focus:ring-amber-300',
+    outline: 'border-2 border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white focus:ring-blue-300',
+    ghost: 'text-blue-600 hover:bg-blue-50 focus:ring-blue-200'
   };
+
 
   const sizes = {
     sm: 'px-3 py-2 text-sm',
     md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg',
+    lg: 'px-8 py-4 text-lg'
   };
-
+  
   const disabledClasses = 'opacity-50 cursor-not-allowed';
-
+  
   const classes = `
     ${baseClasses}
     ${variants[variant]}
@@ -101,6 +96,20 @@ const Button = ({
     ${className}
   `.trim();
 
+  // If href is provided, render as Link
+  if (href) {
+    return (
+      <Link
+        to={href}
+        className={classes}
+        {...props}
+      >
+        {children}
+      </Link>
+    );
+  }
+
+  // Otherwise render as button
   return (
     <button
       type={type}
